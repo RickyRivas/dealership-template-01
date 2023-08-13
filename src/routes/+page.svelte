@@ -44,6 +44,79 @@
 </section>
 
 <!-- ============================================ -->
+<!--                 Brands                     -->
+<!-- ============================================ -->
+<section id="brands">
+  <h2>Some of your favorite brands</h2>
+  <a href="/" class="chev">
+    <img
+      class=""
+      src="/logos/chev.svg"
+      alt=""
+      width="201"
+      height="72"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+  <a href="/" class="honda">
+    <img
+      class=""
+      src="/logos/honda.svg"
+      alt=""
+      width="200"
+      height="147"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+  <a href="/" class="ford">
+    <img
+      class=""
+      src="/logos/ford.svg"
+      alt=""
+      width="200"
+      height="75"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+  <a href="/" class="dodge">
+    <img
+      class=""
+      src="/logos/dodge.svg"
+      alt=""
+      width="200"
+      height="208"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+  <a href="/" class="toyota">
+    <img
+      class=""
+      src="/logos/toyota.svg"
+      alt=""
+      width="200"
+      height="164"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+  <a href="/" class="nissan">
+    <img
+      class=""
+      src="/logos/nissan.svg"
+      alt=""
+      width="200"
+      height="200"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+</section>
+
+<!-- ============================================ -->
 <!--                 Why us (3)                     -->
 <!-- ============================================ -->
 <section id="why">

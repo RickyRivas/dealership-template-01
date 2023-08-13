@@ -88,11 +88,90 @@
     }
 }
 
+#brands {
+    text-align: center;
+    display: block;
+    padding: 3em 0;
+
+    @media only screen and (max-width: 479px) {
+        font-size: 1em;
+    }
+
+    @media only screen and (min-width: 480px) {
+        font-size: 1.5vw;
+    }
+
+    @media only screen and (min-width: 979px) {
+        font-size: inherit;
+        padding: 3em 0 0;
+    }
+
+    h2 {
+        display: block;
+        font-size: (39/20em);
+        text-transform: capitalize;
+        margin-bottom: (50/39em);
+        line-height: 1.2;
+    }
+
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 1.5em;
+
+        @media only screen and (max-width: 479px) {
+            margin: 5%;
+            width: 35%;
+            font-size: .9em;
+        }
+
+        @media only screen and (min-width: 480px) {
+            margin: 0 1.5em;
+        }
+
+        &.chev {
+            width: (200/20em);
+            height: (72/20em);
+        }
+
+        &.honda {
+            // width: (200/20em);
+            height: (100/20em);
+        }
+
+        &.ford {
+            width: (200/20em);
+            height: (75/20em);
+        }
+
+        &.dodge {
+            // width: (200/20em);
+            height: (100/20em);
+        }
+
+        &.toyota {
+            // width: (200/20em);
+            height: (100/20em);
+        }
+
+        &.nissan {
+            // width: (200/20em);
+            height: (125/20em);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
 #why {
     display: block;
     text-align: center;
     padding: 3em 0;
     overflow: hidden;
+    display: none;
 
     @media only screen and (max-width: 767px) {
         font-size: 1em;
@@ -169,7 +248,7 @@
 
     @media only screen and (min-width: 1024px) {
         font-size: inherit;
-        padding: 0em 0 5em;
+        padding: 5em 0 5em;
 
         &::before {
             content: '';
