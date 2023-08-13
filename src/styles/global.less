@@ -39,6 +39,22 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: .75em 2em;
+    color: white;
+    transition: background-color .33s ease;
+
+    &:hover {
+        background-color: #212121;
+    }
+}
+
 /* ===============================================
 	.screenreader 
 	a11y support for descriptive text on vaguely worded buttons

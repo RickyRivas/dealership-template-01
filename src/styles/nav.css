@@ -39,7 +39,7 @@ nav .container {
   align-items: center;
   position: relative;
   padding: 0 0 0 0.5em;
-  max-width: 60em;
+  width: 100%;
   margin: 0 auto;
 }
 nav .container .logo {
@@ -52,6 +52,11 @@ nav .container .logo svg,
 nav .container .logo img {
   width: 100%;
   height: auto;
+}
+@media only screen and (min-width: 1024px) {
+  nav .container {
+    max-width: 60em;
+  }
 }
 nav .container .nav-links {
   background-color: white;
