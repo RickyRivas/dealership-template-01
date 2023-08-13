@@ -2,7 +2,7 @@ nav {
     background-color: #fff;
     border-bottom: 1px solid #bebebe;
     width: 100%;
-    height: (70/20em);
+    // height: (70/20em);
     position: fixed;
     z-index: 3000;
     top: 0;
@@ -48,10 +48,13 @@ nav {
         margin: 0 auto;
 
         .logo {
-            width: 2.5em;
-            display: block;
+            width: (170/20em);
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            svg {
+            svg,
+            img {
                 width: 100%;
                 height: auto;
             }
@@ -60,10 +63,10 @@ nav {
         .nav-links {
             background-color: white;
             position: absolute;
-            top: 0em;
+            top: -2em;
             right: 0;
             width: 80%;
-            height: 100vh;
+            height: 110vh;
             padding: 10em 0 3em 2em;
             transform: translateX(100%);
             transition: transform .33s ease;
@@ -119,9 +122,8 @@ nav {
                 width: auto;
                 color: white;
                 padding: .75em 2em;
-                background-color: fade(#ff541a, 100%);
+                background-color: var(--primary-color);
                 text-decoration: none;
-                border-radius: .5em;
                 transition: background-color .33s ease;
 
                 &:hover {
@@ -136,6 +138,7 @@ nav {
                 padding: 1em 0;
                 width: auto;
                 background-color: transparent;
+                top: 0;
 
                 .nav-link,
                 li {
@@ -167,7 +170,7 @@ nav {
             color: white;
             width: (70/20em);
             height: (69/20em);
-            background-color: #f4f4f4;
+            background-color: #D90429;
             transition: background-color .33s ease;
             z-index: 2;
 
@@ -183,7 +186,7 @@ nav {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%) rotate(0) scaleX(1);
-                background-color: #212121;
+                background-color: #fff;
 
                 &:nth-child(1) {
                     top: 38%;
@@ -225,6 +228,81 @@ nav {
                         width: 2em;
                         transform: translate(-50%, -50%) rotate(-45deg) scaleX(1);
                     }
+                }
+            }
+        }
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1em;
+
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     width: 100vw;
+        //     height: 100%;
+        //     display: block;
+        //     background-color: #f4f4f4;
+        //     z-index: -1;
+        // }
+
+        .phone,
+        .hours {
+            display: none;
+            text-decoration: none;
+            vertical-align: middle;
+            color: #212121;
+            font-size: 1em;
+            line-height: 1.2;
+            transition: color .33s ease;
+
+            .icon {
+                width: 1em;
+                height: auto;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            @media only screen and (min-width: 768px) {
+                font-size: (14/20em);
+                display: inline-block;
+            }
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+
+        .phone {
+            display: inline-block;
+            margin-right: 1em;
+        }
+
+
+        .socials {
+            display: inline-block;
+            vertical-align: middle;
+
+            a {
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 0;
+                transition: transform .33s ease;
+                margin: 0 .2em;
+
+                .icon {
+                    height: (14/20em);
+                    width: auto;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
                 }
             }
         }

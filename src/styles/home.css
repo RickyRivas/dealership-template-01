@@ -5,14 +5,19 @@
   text-align: center;
   padding: 3em 0;
   isolation: isolate;
+  min-height: 42.5em;
 }
 #landing .content {
   width: 96%;
   max-width: 29em;
   text-align: left;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 auto 3em;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 #landing .content span {
   background-color: #212121;
@@ -31,9 +36,11 @@
   margin: 0 0 0.41666667em 0;
   text-transform: capitalize;
   line-height: 1;
+  color: #fff;
 }
 #landing .content p {
   margin: 0 0 2em 0;
+  color: #fff;
 }
 #landing .content .cta {
   display: inline-block;
@@ -42,35 +49,36 @@
   text-decoration: none;
   background-color: var(--primary-color);
   padding: 0.75em 2em;
-  border-radius: 0.5em;
   color: white;
   transition: background-color 0.33s ease;
 }
 #landing .content .cta:hover {
   background-color: #212121;
 }
-#landing .hero {
-  width: 80%;
-  max-width: 25em;
-  height: auto;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 0.5em;
+#landing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+#landing picture img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 @media only screen and (min-width: 768px) {
   #landing {
     font-size: 1.7vw;
     padding: 6em 0;
-  }
-  #landing::before {
-    content: '';
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: calc(50% + 16em);
-    background-color: var(--primary-color);
-    height: 100%;
-    z-index: -1;
   }
   #landing .content {
     margin: 0 3em 0 0;
@@ -79,5 +87,9 @@
 @media only screen and (min-width: 1024px) {
   #landing {
     font-size: inherit;
+    min-height: 45em;
+  }
+  #landing .content {
+    margin-left: -15em;
   }
 }
