@@ -42,77 +42,89 @@
     <a href="/" class="btn">Explore Vehicles</a>
   </div>
 </section>
+<!-- ============================================ -->
+<!--                 callouts                     -->
+<!-- ============================================ -->
 
-<!-- ============================================ -->
-<!--                 Brands                     -->
-<!-- ============================================ -->
-<section id="brands">
-  <h2>Some of your favorite brands</h2>
-  <a href="/" class="chev">
+<section id="callouts">
+  <a href="/" class="item">
     <img
       class=""
-      src="/logos/chev.svg"
+      src="/callout01.jpg"
       alt=""
-      width="201"
-      height="72"
+      width="630"
+      height="477"
       loading="lazy"
       decoding="async"
       fetchpriority="low" />
+    <div class="text">
+      <h3>Current Offers</h3>
+      <svg
+        width="26"
+        height="42"
+        viewBox="0 0 26 42"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        role="img">
+        <path
+          d="M25.3866 20.7736L4.71553 41.4447L0.386597 37.1157L16.7286 20.7736L0.386597 4.43168L4.71553 0.102662L25.3866 20.7736Z"
+          fill="white" />
+      </svg>
+    </div>
   </a>
-  <a href="/" class="honda">
+  <a href="/" class="item">
     <img
       class=""
-      src="/logos/honda.svg"
+      src="/callout02.jpg"
       alt=""
-      width="200"
-      height="147"
+      width="630"
+      height="477"
       loading="lazy"
       decoding="async"
       fetchpriority="low" />
+    <div class="text">
+      <h3>Get Financing</h3>
+      <svg
+        width="26"
+        height="42"
+        viewBox="0 0 26 42"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        role="img">
+        <path
+          d="M25.3866 20.7736L4.71553 41.4447L0.386597 37.1157L16.7286 20.7736L0.386597 4.43168L4.71553 0.102662L25.3866 20.7736Z"
+          fill="white" />
+      </svg>
+    </div>
   </a>
-  <a href="/" class="ford">
+
+  <a href="/" class="item">
     <img
       class=""
-      src="/logos/ford.svg"
+      src="/callout03.jpg"
       alt=""
-      width="200"
-      height="75"
+      width="630"
+      height="477"
       loading="lazy"
       decoding="async"
       fetchpriority="low" />
-  </a>
-  <a href="/" class="dodge">
-    <img
-      class=""
-      src="/logos/dodge.svg"
-      alt=""
-      width="200"
-      height="208"
-      loading="lazy"
-      decoding="async"
-      fetchpriority="low" />
-  </a>
-  <a href="/" class="toyota">
-    <img
-      class=""
-      src="/logos/toyota.svg"
-      alt=""
-      width="200"
-      height="164"
-      loading="lazy"
-      decoding="async"
-      fetchpriority="low" />
-  </a>
-  <a href="/" class="nissan">
-    <img
-      class=""
-      src="/logos/nissan.svg"
-      alt=""
-      width="200"
-      height="200"
-      loading="lazy"
-      decoding="async"
-      fetchpriority="low" />
+    <div class="text">
+      <h3>Service Specials</h3>
+      <svg
+        width="26"
+        height="42"
+        viewBox="0 0 26 42"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        role="img">
+        <path
+          d="M25.3866 20.7736L4.71553 41.4447L0.386597 37.1157L16.7286 20.7736L0.386597 4.43168L4.71553 0.102662L25.3866 20.7736Z"
+          fill="white" />
+      </svg>
+    </div>
   </a>
 </section>
 
@@ -218,5 +230,89 @@
     </p>
     <a href="/contact" class="btn">Contact Us</a>
     <a href="/contact" class="btn">Explore Inventory</a>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Brands                     -->
+<!-- ============================================ -->
+<section id="brands">
+  <h2>Some of your favorite brands</h2>
+  <a href="/" class="chev">
+    <img
+      class=""
+      src="/logos/chev.svg"
+      alt=""
+      width="201"
+      height="72"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+  <a href="/" class="honda">
+    <img
+      class=""
+      src="/logos/honda.svg"
+      alt=""
+      width="200"
+      height="147"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+  <a href="/" class="ford">
+    <img
+      class=""
+      src="/logos/ford.svg"
+      alt=""
+      width="200"
+      height="75"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+  <a href="/" class="dodge">
+    <img
+      class=""
+      src="/logos/dodge.svg"
+      alt=""
+      width="200"
+      height="208"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+  <a href="/" class="toyota">
+    <img
+      class=""
+      src="/logos/toyota.svg"
+      alt=""
+      width="200"
+      height="164"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+  <a href="/" class="nissan">
+    <img
+      class=""
+      src="/logos/nissan.svg"
+      alt=""
+      width="200"
+      height="200"
+      loading="lazy"
+      decoding="async"
+      fetchpriority="low" />
+  </a>
+</section>
+
+<!-- ============================================ -->
+<!--                 map                     -->
+<!-- ============================================ -->
+
+<section id="ftmap">
+  <div class="mod">
+    <p>1234 S SHERIAN DR, TULSA, OK 74115</p>
+    <a href="/" class="btn">get directions</a>
   </div>
 </section>

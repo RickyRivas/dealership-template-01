@@ -103,7 +103,7 @@
 
     @media only screen and (min-width: 979px) {
         font-size: inherit;
-        padding: 3em 0 0;
+        padding: 0em 0 3em;
     }
 
     h2 {
@@ -360,6 +360,131 @@
         p {
             display: block;
             margin: 0 0 (40/20em) 0;
+        }
+    }
+}
+
+#callouts {
+    display: block;
+    text-align: center;
+    padding: 2em 0;
+
+    @media only screen and (max-width: 510px) {
+        font-size: 3.1vw;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 1.035vw;
+    }
+
+    @media only screen and (min-width: 1900px) {
+        font-size: inherit;
+    }
+
+    .item {
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #fff;
+        width: (630/20em);
+        height: (477/20em);
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+        margin: 0 0 .5em;
+
+        @media only screen and (min-width: 768px) {
+            margin: 0;
+        }
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: fade(#000000, 20%);
+            display: block;
+            z-index: 2;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            transition: transform .33s ease-in-out;
+            display: block;
+        }
+
+        .text {
+            position: absolute;
+            bottom: (25/20em);
+            left: (25/20em);
+            display: block;
+            z-index: 3;
+
+            h3 {
+                color: #fff;
+                font-size: (28/20em);
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: (5/28em);
+            }
+
+            svg {
+                display: inline-block;
+                vertical-align: middle;
+                width: (15/20em);
+                height: auto;
+                position: relative;
+                transition: left .33s ease;
+                left: 0;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+
+            svg {
+                left: .5em;
+            }
+        }
+    }
+}
+
+#ftmap {
+    display: block;
+    background: url(/map.jpg) center / auto no-repeat;
+    text-align: center;
+    padding: 3em 0;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 1.7vw;
+        padding: 8.3em 0;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: inherit;
+    }
+
+    .mod {
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: white;
+        margin: 0 auto;
+        padding: 4em 4em;
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        a {
+            text-transform: capitalize;
         }
     }
 }

@@ -98,7 +98,7 @@
 @media only screen and (min-width: 979px) {
   #brands {
     font-size: inherit;
-    padding: 3em 0 0;
+    padding: 0em 0 3em;
   }
 }
 #brands h2 {
@@ -333,4 +333,120 @@
 #about .content p {
   display: block;
   margin: 0 0 2em 0;
+}
+#callouts {
+  display: block;
+  text-align: center;
+  padding: 2em 0;
+}
+@media only screen and (max-width: 510px) {
+  #callouts {
+    font-size: 3.1vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #callouts {
+    font-size: 1.035vw;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  #callouts {
+    font-size: inherit;
+  }
+}
+#callouts .item {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  width: 31.5em;
+  height: 23.85em;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 0.5em;
+}
+@media only screen and (min-width: 768px) {
+  #callouts .item {
+    margin: 0;
+  }
+}
+#callouts .item::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: block;
+  z-index: 2;
+}
+#callouts .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 0.33s ease-in-out;
+  display: block;
+}
+#callouts .item .text {
+  position: absolute;
+  bottom: 1.25em;
+  left: 1.25em;
+  display: block;
+  z-index: 3;
+}
+#callouts .item .text h3 {
+  color: #fff;
+  font-size: 1.4em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.17857143em;
+}
+#callouts .item .text svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.75em;
+  height: auto;
+  position: relative;
+  transition: left 0.33s ease;
+  left: 0;
+}
+#callouts .item:hover img {
+  transform: scale(1.05);
+}
+#callouts .item:hover svg {
+  left: 0.5em;
+}
+#ftmap {
+  display: block;
+  background: url(/map.jpg) center / auto no-repeat;
+  text-align: center;
+  padding: 3em 0;
+}
+@media only screen and (min-width: 768px) {
+  #ftmap {
+    font-size: 1.7vw;
+    padding: 8.3em 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #ftmap {
+    font-size: inherit;
+  }
+}
+#ftmap .mod {
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: white;
+  margin: 0 auto;
+  padding: 4em 4em;
+}
+#ftmap .mod p {
+  margin-bottom: 1em;
+}
+#ftmap .mod a {
+  text-transform: capitalize;
 }

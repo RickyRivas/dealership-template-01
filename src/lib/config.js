@@ -16,8 +16,8 @@ export const pages = [
         metaDescription: "",
     },
     {
-        name: "About",
-        path: "/about",
+        name: "Vehicles",
+        path: "/vehicles",
         metaDescription: "",
     },
     {
